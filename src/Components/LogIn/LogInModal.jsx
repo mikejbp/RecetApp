@@ -9,7 +9,6 @@ const LogInModal = ({ show, onClose, title, subtitle, children }) => {
   const stop = (e) => e.stopPropagation();
 
   return ReactDOM.createPortal(
-    <TransitionGroup>
     <CSSTransition
       in={show}
       unmountOnExit
@@ -38,8 +37,7 @@ const LogInModal = ({ show, onClose, title, subtitle, children }) => {
           </footer>
         </div>
       </section>
-    </CSSTransition>
-    </TransitionGroup>,
+    </CSSTransition>,
     document.getElementById('root')
   )
 }
