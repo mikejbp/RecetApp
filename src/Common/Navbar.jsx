@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { GoSearch, GoSignIn } from "react-icons/go";
 import Sidebar from './Sidebar';
 import imgLogo from '../Assets/logoNavbar.png'
-import LogIn from '../Components/Login/Login';
+import LogIn from '../Components/LogIn/LogIn'
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
