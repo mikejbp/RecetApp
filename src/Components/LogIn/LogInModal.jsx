@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { CSSTransition } from 'react-transition-group'
+import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import '../../Styles/LogInModal.css'
 import imgLogo from '../../Assets/logoNavbar.png'
 
@@ -9,6 +9,7 @@ const LogInModal = ({ show, onClose, title, subtitle, children }) => {
   const stop = (e) => e.stopPropagation();
 
   return ReactDOM.createPortal(
+    <TransitionGroup>
     <CSSTransition
       in={show}
       unmountOnExit
@@ -37,7 +38,8 @@ const LogInModal = ({ show, onClose, title, subtitle, children }) => {
           </footer>
         </div>
       </section>
-    </CSSTransition>,
+    </CSSTransition>
+    </TransitionGroup>,
     document.getElementById('root')
   )
 }
