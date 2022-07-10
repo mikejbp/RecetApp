@@ -1,0 +1,156 @@
+.formcreate-container {
+  height: 60vh;
+  width: 100vw;
+  background: url(../Assets/recipecard.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+
+.formcreate-wrapper {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  border-radius: 1rem;
+  margin: 1vh 2vw;
+  padding: 3vw;
+}
+
+.formcreate-title {
+  font-size: 2.25vh;
+  font-family: var(--font-text);
+  color: white;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  margin-bottom: 2vh;
+}
+
+.formcreate-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5vh;
+  font-size: 1vh;
+  font-weight: 600;
+  color: var(--dark-color);
+  font-family: var(--font-text);
+  height: 3vh;
+  width: 100%;
+  border-radius: 1rem;
+  padding-left: 2vw;
+}
+
+.formcreate-select {
+  padding: 1vh;
+  margin-bottom: 2vh;
+  font-size: 1.5vh;
+  font-weight: 600;
+  color: var(--dark-color);
+  font-family: var(--font-text);
+  height: 4vh;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.formcreate-label {
+  display: flex;
+  color: white;
+  font-size: 1.75vh; 
+  font-weight: 600;
+  margin-bottom: .5vh;
+}
+
+.formcreate-option {
+  color: var(--dark-color);
+  font-size: 1.5vh; 
+  font-weight: 600; 
+  font-family: var(--font-text);
+}
+
+.formcreate-control2 {
+  height: 6vh;
+  width: 100%; 
+  font-size: 1.5vh; 
+  font-weight: 600;
+  color: var(--dark-color);
+  border-radius: 1rem;  
+  margin-bottom: 2vh;
+  padding: 2vw;
+}
+
+.btn-crear {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 4vh;
+  font-size: 1.5vh;
+  font-weight: 700;
+  font-family: var(--font-text);
+  color: var(--dark-color);
+  border-radius: 1rem;
+}
+
+.btn-crear:hover {
+  background-color: var(--dark-color);
+  color: white;
+}
+
+@media (min-width: 650px) {
+  .formcreate-container {
+    height: 100vh;
+    width: 55vw;
+  }
+
+.formcreate-wrapper {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  border-radius: 1rem;
+  margin: 10vh 2vw;
+  padding: 5%;
+  height: 80%;
+  }
+
+  .formcreate-title {
+    font-size: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  .formcreate-select {
+    margin-bottom: 3vh;
+    font-size: 2vh;
+    height: 5vh;
+  }
+
+  .formcreate-control {
+    margin-bottom: 2vh;
+    font-size: 2vh;
+    height: 5vh;
+    width: 100%;
+    border-radius: 1rem;
+    padding-left: 1vw;
+  }
+
+  .formcreate-label {
+    font-size: 2vh; 
+    margin-bottom: 1vh;
+  }
+
+  .formcreate-option {
+    font-size: 2vh; 
+  }
+
+  .btn-crear {
+    width: 100%;
+    height: 5vh;
+    padding: 1vh 0;
+    font-size: 2vh;
+    font-weight: 600;
+  }
+
+  .formcreate-control2 {
+    height: 8vh;
+    width: 100%; 
+    font-size: 2vh; 
+    font-weight: 600;
+    color: var(--dark-color);
+    border-radius: 1rem;  
+    margin-bottom: 3vh;
+    padding: 1vw;
+  }
+}

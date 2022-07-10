@@ -1,0 +1,38 @@
+.container-error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-image{
+    background-image: var(--background-gradiant), url(/img/pag_error.jpg);
+    width: 50%;
+    margin: 1rem;
+}
+
+.error-message{
+    color: antiquewhite;
+    position: absolute;
+    padding: 2rem;
+    text-align: center;
+}
+
+p{
+    font-size: 2rem;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1012px){
+    .error-message{
+        position: relative;
+        color: var(--dark-color);
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .error-message{
+        padding: 1rem 5rem 0 0;
+    }
+}

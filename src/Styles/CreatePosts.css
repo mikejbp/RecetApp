@@ -1,0 +1,18 @@
+.wrapper-create-posts {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+@media (min-width: 650px) {
+  .wrapper-create-posts {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+

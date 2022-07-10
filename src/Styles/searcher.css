@@ -1,0 +1,47 @@
+.searcher {
+    background-color: var(--light-color);
+}
+
+.headland-finder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-color);
+    padding: 2rem;
+}
+
+.input-search {
+    margin: 3rem;
+    border-radius: 1rem;
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+    width: 50%;
+    height: 6vh;
+    background: var(--primary-color);
+}
+
+.search-title{
+    font-size: 5rem;
+    color: var(--light-color);
+}
+
+.receta-search-item{
+    margin: 3rem;
+    grid-area: info;
+}
+
+.all-recetas-description{
+    display: grid;
+    grid-template-areas: 'image info';
+    width: 30%;
+    padding: 3rem;
+    align-items: center;
+}
+
+.image-recipe{
+    width: 100%;
+    grid-area: image;
+}
+
+.receta-search-info{
+    grid-area: info;
+}

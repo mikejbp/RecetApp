@@ -1,0 +1,87 @@
+.container-image {
+  height: 100vh;
+}
+
+.wrapper-image {
+  margin: auto;
+  width: 100%;
+}
+
+.errorMsg {
+  color: red;
+  font-size: 24px;
+  margin: 3px 0;
+}
+
+.imgPreview {
+  width: 100vw;
+  height: 40vh;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.imgPreview input[type="file"] {
+  display: none;
+}
+
+.imgPreview {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-color);
+  font-size: 2rem;
+  font-weight: 500;
+  padding: .3rem .7rem;
+}
+
+.customFileupload {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: .3rem .7rem;
+  cursor: pointer;
+}
+
+.customFileupload:hover {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.btn-remove {
+  position: absolute;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: .9rem .6rem;
+  background: var(--primary-color);
+  color: var(--dark-color);
+  font-size: 2vh;
+  font-family: var(font-text);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn-remove:hover {
+  background: var(--dark-color);
+  color: white;
+}
+
+@media (min-width: 650px) {
+  .imgPreview {
+    width: 45vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+    justify-content: center;
+    text-align: center;
+  }
+
+
+}

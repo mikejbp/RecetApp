@@ -1,0 +1,156 @@
+.section-receta{
+    background-image: linear-gradient(13deg, #151c1a7d 0%, #bbfee393 100%), url(/img/cook.jpg);
+    display: flex;
+    flex-direction: column;
+}
+
+.first-part-of-the-recipe{
+    display: grid;
+    gap: 5vw;
+    margin: 2vh 3vw;
+    grid-template-areas: 
+    '1area 2area';
+}
+
+.receta-more-detail{
+    padding: 2vh;
+    font-size: 2vh;
+    font-family: var(--font-text);
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+}
+
+.receta-title{
+    font-weight: 600;
+    font-family: var(--font-text);
+    font-size: 2vh;
+    padding: .5vh 3vw;
+}
+
+.receta-detail-content{
+    grid-area: 1area;
+    max-width: 100%;
+    background: linear-gradient(135deg, #53a28eb9 0%, #bbfee3af 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 4vh 1vw;
+    align-items: center;
+    border-radius: 3rem;
+}
+
+.receta-detail-image{
+    width: 40vw;
+    filter:brightness(90%);
+    border-radius: 1rem;
+    border-color: 1rem solid var(--medium-color);
+}
+
+.items-receta {
+    font-family: var(--font-text);
+    font-weight: 400;
+    padding: 1vh 3vw;
+    font-size: 2vh;
+}
+
+.nutritional-information{
+    height: 50vh; 
+}
+
+.receta-description{
+    grid-area: 2area;
+    max-width: 100%;
+    background: linear-gradient(135deg, #53a28eb9 0%, #bbfee3af 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 4vh 1vw;
+    align-items: center;
+    border-radius: 3rem;
+}
+
+.second-part-of-the-recipe{
+    display: grid;
+    gap: 5vw;
+    margin: 2vh 3vw;
+    grid-template-areas:
+    'components calories';
+}
+
+.nutritional-components{
+    grid-area: components;
+    max-width: 100%;
+    background: linear-gradient(135deg, #53a28eb9 0%, #bbfee3af 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 4vh 1vw;
+    align-items: center;
+    border-radius: 3rem;
+}
+
+.calories{
+    grid-area: calories;
+    max-width: 100%;
+    background: linear-gradient(135deg, #53a28eb9 0%, #bbfee3af 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 4vh 1vw;
+    align-items: center;
+    border-radius: 3rem;
+}
+
+@media (min-width: 700px) {
+.first-part-of-the-recipe{
+    gap: 5vw;
+    margin: 2vh 3vw;
+}
+
+.receta-more-detail{
+    padding: 2vh;
+    font-size: 2vh;
+    font-weight: 400;
+    width: 100%;
+}
+
+.receta-title{
+    font-weight: 600;
+    font-family: var(--font-text);
+    font-size: 3vh;
+    padding: .5vh 3vw;
+    }
+
+.receta-detail-content{
+    padding: 4vh 1vw;
+    }
+
+.receta-detail-image{
+    width: 40vw;
+    }
+
+.items-receta {
+    font-weight: 300;
+    padding: 2vh 3vw;
+    font-size: 2.5vh;
+}
+
+.nutritional-information{
+    height: 60vh; 
+}
+
+.receta-description{
+    padding: 4vh 1vw;
+    }
+
+.second-part-of-the-recipe{
+    display: grid;
+    gap: 5vw;
+    margin: 2vh 3vw;
+    }
+
+.nutritional-components{
+    padding: 4vh 1vw;
+    }
+
+.calories{
+    padding: 4vh 1vw;
+    }
+}

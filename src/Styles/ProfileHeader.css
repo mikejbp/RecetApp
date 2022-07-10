@@ -1,0 +1,167 @@
+.profile-header.mobile {
+  display: grid;
+  gap: 1vh;
+  margin: 1vh 5vw;
+}
+
+.profile-header-header {
+  display: flex;
+  gap: 5vw;
+  margin: 1vh 0;
+  justify-content: center;
+}
+
+.profile-img {
+  display: flex;
+}
+
+.img-style {
+  height: 10vh;
+}
+
+.profile-username {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.username {
+  font-size: 7.5vw;
+  font-family: var(--font-text);
+  font-weight: 300;
+}
+
+.button-crearpost {
+  display: none;
+  width: 8rem;
+  height: 3rem;
+  border-radius: .5rem;
+  border: .5px solid rgb(209, 209, 209);
+  background-color: rgba(243, 242, 242, 0.37);
+  font-size: 1.3vh;
+  font-weight: 700;
+  padding: .5% 1%;
+  color: var(--dark-color);
+  font-family: var(--font-text);
+}
+
+.button-crearpost:hover {
+  color: white;
+  background: var(--dark-color);
+}
+
+.crearpost.mobile {
+  font-size: 3rem;
+  color: var(--dark-color);
+  display: flex;
+}
+
+.crearpost.mobile:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.text-one, .profile-name {
+  font-size: 4vw;
+  font-weight: 500;
+  font-family: var(--font-text);
+}
+
+.text-two, .description-profile {
+  font-size: 4vw;
+  font-weight: 300;
+  font-family: var(--font-text);
+}
+
+.profile-description {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: .5vh;
+}
+
+
+/* .btn-edit {
+  width: 15vw;
+  height: 3rem;
+  border-radius: .5rem;
+  border: .5px solid rgb(209, 209, 209);
+  background-color: rgba(243, 242, 242, 0.37);
+  font-size: 1vh;
+  font-weight: 600;
+}
+ */
+
+.profile-info {
+  border-top: 1px solid gray;
+  padding: 1vh;
+  border-bottom: 1px solid gray;
+  gap: .5vh;
+}
+
+.profile-statics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 15vw;
+}
+
+.statics {
+  display: grid;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  gap: .5vw;
+}
+
+@media (min-width: 600px) {
+  .profile-header.mobile {
+  display: grid;
+  gap: 1vh;
+  margin: 1vh 10vw;
+}
+
+  .profile-header-header {
+  display: flex;
+  justify-content: center;
+}
+
+  .img-style {
+    height: 20vh;
+  }
+
+  .username {
+    font-size: 4rem;
+  }
+
+  .button-crearpost {
+    display: block;
+  }
+
+  .crearpost.mobile {
+    display: none;
+  }
+
+  .text-one, .profile-name, .text-two, .description-profile {
+    font-size: 2rem;
+  }
+
+  .profile-statics {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 15vw;
+  }
+
+  .statics {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 1vw;
+  }
+}

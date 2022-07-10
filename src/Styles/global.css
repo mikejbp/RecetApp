@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Oleo+Script:wght@400;700&family=Righteous&family=Satisfy&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.50%;
+  --primary-color: hsl(165, 32%, 48%);
+  --secondary-color: hsl(154, 100%, 75%);
+
+  --light-color: hsl(156, 100%, 89%);
+  --medium-color: hsl(162, 100%, 44%);
+  --dark-color: hsl(202, 85%, 8%);
+
+  --font-logo: 'Oleo Script', cursive;
+
+  --background-gradiant: linear-gradient(13deg, #151c1a7d 0%, #bbfee393 100%);
+  --background-gradiant-element: linear-gradient(135deg, #53a28eb9 0%, #bbfee3af 100%);
+
+  --font-text: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: hsl(208, 100%, 97%);
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+      text-decoration: none;
+}
+
+li{
+    list-style: none
+}
+
+link{
+    text-decoration: none
+}
+
+a{
+    text-decoration: none
+}
+
+button, input, textarea, select {
+    border: none;
+    outline: none;
+}

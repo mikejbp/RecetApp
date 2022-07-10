@@ -1,0 +1,239 @@
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+  pointer-events: none;
+}
+
+.modal.enter-done {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modal.exit {
+  opacity: 0;
+}
+
+.modal-content {
+  border-radius: 1rem;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+  width: 35rem;
+  height: 63vh;
+  background: linear-gradient(150deg, var(--primary-color) 50%, rgba(255,255,255,1) 50%);
+  transform: translateY(-200px);
+  transition: all .3s ease-in-out;
+}
+
+.modal.modal.enter-done, .modal-content {
+  transform: translateY(0);
+}
+
+.modal.exit .modal-content {
+  transform: translateY(-200px);
+}
+
+.modal-header {
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-logo {
+  display: flex;
+  width: 10vh;
+
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 3vh;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  font-family: var(--font-logo);
+}
+
+.modal-subtitle {
+  margin: 0;
+  font-size: 1.5vh;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  font-family: var(--font-logo);
+}
+
+.modal-body {
+  padding: 3vh;
+  border-top: 2px dashed #eee;
+  border-bottom: 2px dashed var(--primary-color);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-icontext {
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.modal-icon-wrapper-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-color);
+  width: 10vw;
+  height: 6vh;
+  border-radius: 1rem 0 0 0;
+  border-right: 1px solid gray;
+}
+
+.modal-icon-wrapper-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-color);
+  width: 10vw;
+  height: 6vh;
+  border-radius: 0 0 0 1rem;
+  border-right: 1px solid gray;
+}
+
+.modal-icon {
+  font-size: 1.5rem;
+  color: var(--dark-color);
+}
+
+.modal-input-one {
+  height: 6vh;
+  width: 15rem;
+  background: var(--light-color);
+  padding-left: 1vw;
+  color: var(--dark-color);
+  font-size: 1.5rem;
+  letter-spacing: .125rem;
+}
+
+.modal-input-two {
+  height: 6vh;
+  width: 15rem;
+  border-radius: 0 0 1rem 0;
+  background: var(--light-color);
+  padding-left: 1vw;
+  color: var(--dark-color);
+  font-size: 1.5rem;
+  letter-spacing: .125rem;
+}
+
+.modal-input::placeholder {
+  color: var(--dark-color);
+  font-size: 1.5rem;
+}
+
+.modal-text-wrapper {
+  margin: 1vh 0;
+
+}
+
+.modal-text {
+  font-size: 1.6vh;
+  color: var(--dark-color);
+  font-weight: 800;
+}
+
+.modal-text:hover {
+  color: var(--primary-color);
+}
+
+.modal-btn {
+  width: 15rem;
+  height: 5vh;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 3rem;
+  font-size: 1.5vh;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.modal-btn:hover, .modal-btn-footer:hover {
+  background: var(--dark-color);
+}
+
+.modal-footer {
+  margin: 1vh 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+}
+
+.modal-text-footer {
+  font-size: 1.5vh;
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+.modal-btn-footer {
+  width: 8rem;
+  height: 5vh;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 1rem;
+  font-size: 1.3vh;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  font-family: var(--font-text);
+  padding: 4% 1rem;
+}
+
+@media (min-width: 450px) {
+  .modal-content {
+  width: 45rem;
+  height: 65vh;
+  }
+
+  .modal-input-one, .modal-input-two {
+  height: 5vh;
+  width: 20rem;
+  }
+
+  .modal-icon-wrapper-one, .modal-icon-wrapper-two {
+  width: 6rem;
+  height: 5vh;
+  }
+
+  .modal-footer {
+  margin: 2vh 3.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  }
+
+  .modal-text-footer {
+    text-align: center;
+    font-size: 1.75vh;
+  }
+
+  .modal-btn-footer {
+  width: 12rem;
+  font-size: 1.6vh;
+  font-family: var(--font-text);
+  padding: 3% 2.5rem;
+  }
+}
