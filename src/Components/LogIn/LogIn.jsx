@@ -15,7 +15,7 @@ const LogIn = ({ btnClass, btnLogin, btnIconClass, btnIconContent }) => {
   const closeModal = () => setShow(false);
   const openModal = () => setShow(true);
 
-  const apiURL = api_url + 'login';
+ /* const apiURL = api_url + 'login';
   const petitionPost = async () => {
         await axios.post(apiURL)
             .then(response => {
@@ -34,7 +34,7 @@ const LogIn = ({ btnClass, btnLogin, btnIconClass, btnIconContent }) => {
 
     const handleChangePass = e => {
         setCredential(e.target.value)
-    } 
+    } */
   /* const apiUrl = api_url + 'login';
   const petitionPost = async () => {
       
@@ -81,7 +81,6 @@ const LogIn = ({ btnClass, btnLogin, btnIconClass, btnIconContent }) => {
             className='modal-input-one' 
             placeholder='Username' 
             value={credential.username}
-            onChange={handleChangeUser}
             required></input>
             </section>
             <section className='modal-icontext'>
@@ -94,7 +93,6 @@ const LogIn = ({ btnClass, btnLogin, btnIconClass, btnIconContent }) => {
               className='modal-input-two' 
               placeholder='Password' 
               value={credential.password}
-              onChange={handleChangePass}
               required></input>
             </section>
             <span className='modal-text-wrapper'>
