@@ -2,9 +2,7 @@ import React from "react";
 import FooterElement from "./FooterElement";
 import '../Styles/footer.css';
 
-import { BsFacebook } from 'react-icons/bs';
-import { GrMail } from 'react-icons/gr';
-import { IoLogoWhatsapp } from "react-icons/io";
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
 export default function Footer(){
     return(
@@ -12,9 +10,15 @@ export default function Footer(){
             <div className="footer-content">
                     <h3 className="footer-title">Contáctanos</h3>
                     <div className="footer-icons">
-                        <FooterElement link={"https://facebook.com/recetapp"} Icon={()=><BsFacebook className="footer-icon"/>}/>
-                        <FooterElement link={"http://"} Icon={()=><GrMail className="footer-icon"/>}/>
-                        <FooterElement link={"http://wa.me/54"} Icon={()=><IoLogoWhatsapp className="footer-icon"/>}/>
+                        <FooterElement 
+                        link={"https://www.linkedin.com/in/miguelbricenodev/"} 
+                        Icon={()=><BsLinkedin className="footer-icon"/>}/>
+                        <FooterElement 
+                        link={"https://github.com/mikejbp/RecetApp"} 
+                        Icon={()=><BsGithub className="footer-icon"/>}/>
+                        <FooterElement 
+                        link={"https://www.linkedin.com/in/flor-talavera/"} 
+                        Icon={()=><BsLinkedin className="footer-icon"/>}/>
                     </div>
                 <p className="copy">&copy; RecetApp by Group 04 </p>
             </div>
